@@ -1,0 +1,229 @@
+body {
+
+    background-image: url('homepage.jpg'); /* נתיב לתמונה */
+    background-size: cover; /* מתיחה שתתאים למסך */
+    background-position: center; /* למקם את התמונה במרכז */
+    background-attachment: fixed; /* שהתמונה לא תזוז עם הגלילה */
+    background-repeat: no-repeat; /* לא לחזור על התמונה */
+    margin: 0;
+    margin-top: 100px;
+    padding: 0;
+ 
+}
+
+.login-container {
+    background: rgb(174, 243, 223);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+ button {
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 40%;
+    cursor: pointer;
+    margin: auto;
+    display: grid;
+    }
+    
+
+button:hover {
+    background: #218838; }
+
+#error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+
+.text {
+    text-align: center;
+
+}
+#start_button {
+    margin-top: 10%;
+    margin-left: 7%;
+    margin-right: 70%;
+}
+#stop_button {
+    margin-left: 65%;
+    margin-right: 7%;
+}
+
+.container {
+    width: 50%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #f0f0f0;
+    padding: 50px;
+    margin: 5px 0;
+    border-radius: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 15px;
+  overflow: hidden;
+}
+
+li {
+  float:inherit
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+#listContainer {
+    display: none; /* מוסתר עד שלוחצים על הכפתור */
+    margin-top: 20px;
+}
+
+select {
+    height: 50px;
+    width: 300px;
+    text-align-last: center;
+    font-size: 16px;
+}
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 150px;  /* רוחב אחיד */
+    height: 50px;  /* גובה אחיד */
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 0; /* מרובע */
+    transition: 0.3s;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #555;
+}
+#listContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 0;
+    transition: 0.3s;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* עיצוב הכפתור של פתיחת נתוני מחשב */
+#openComputer {
+    background-color: #ff9800; /* צבע כתום */
+    animation: blink 1s infinite alternate;
+}
+
+#openComputer:hover {
+    background-color: #e68900; /* כהה יותר */
+    animation: none; /* מפסיק להבהב בלחיצה */
+}
+
+/* אנימציה להבהוב */
+@keyframes blink {
+    0% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+#openComputer {
+    background-color: #ff9800; /* צבע כתום */
+    animation: blink 1s infinite alternate;
+    font-size: 14px; /* הקטנת הטקסט */
+    padding: 5px; /* ריווח פנימי */
+    text-align: center; /* יישור למרכז */
+    white-space: nowrap; /* מניעת ירידת שורות */
+    overflow: hidden; /* מניעת גלישה */
+    text-overflow: ellipsis; /* שלוש נקודות אם הטקסט ארוך מדי */
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 180px;
+    height: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#startListening {
+    background-color: #4CAF50; /* ירוק */
+}
+
+#stopListening {
+    background-color: #F44336; /* אדום */
+}
